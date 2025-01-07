@@ -1,0 +1,8 @@
+
+
+regex and fix loading icon not beign centered in newspaper form
+add that intro only does the layout animation when image has loaded by either making sure the initial image is the size of the layout image so it doesnt reeload or state management and put the parent div s the layout element and the initial image just sits on top while the new one loads
+
+
+Gaby updates all info & data
+replace scroll down indicator to whatever gaby queen want
