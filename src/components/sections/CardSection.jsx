@@ -1,21 +1,10 @@
 "use client";
-import {
-  motion,
-  useMotionValue,
-  useMotionValueEvent,
-  useScroll,
-  useSpring,
-  useTransform,
-  cubicBezier,
-} from "framer-motion";
-import { Canvas, useThree } from "@react-three/fiber";
-import { useEffect, useRef } from "react";
+import { motion, useScroll, useTransform, cubicBezier } from "framer-motion";
+
+import { useRef } from "react";
 import Image from "next/image";
 import useScreenSize from "@/hooks/useScreenSize";
-import useMousePosition from "@/hooks/useMousePosition";
-import { useState } from "react";
 
-import { Points, Point, PointMaterial, OrbitControls } from "@react-three/drei";
 import { MathUtils } from "three";
 const cards = [
   {

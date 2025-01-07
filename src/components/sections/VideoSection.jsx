@@ -10,7 +10,7 @@ import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player"), {
   ssr: false,
 });
-import Logo from "../Logo";
+
 export default function VideoSection() {
   const container = useRef(null);
 
@@ -28,10 +28,7 @@ export default function VideoSection() {
   const filter = useMotionTemplate`blur(${blur}px) brightness(${brightness}) saturate(${saturate})`;
 
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1.8, 1.5, 1]);
-  const logoY = useTransform(scrollYProgress, [0, 1], ["-100%", "0%"]);
-  console.log(
-    "IN VIDEOSECTION.JSX KEEP BG VIDEO 100VH WITH TEXT ON OP TOP THAT TRANSLATES LIKE THE VIDEO ON SCROILL FROM PREVIOUS SECTION AS WELL AND MAKE THE CONTENTS THAT TELL INFO APPEAR IN A SCALE UP ANIMATION ON SCROLL"
-  );
+
   return (
     <section
       ref={container}

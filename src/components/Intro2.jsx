@@ -46,7 +46,6 @@ function Row({ row, index, onImageLoad, hasLoaded }) {
         className="hover:z-50 relative grid gap-4 grid-cols-[repeat(7,1fr)] will-change-[transform,filter] size-full"
       >
         {row.map((card, i) => {
-          console.log(card);
           return (
             <Card
               key={card.id}
@@ -175,9 +174,6 @@ export default function Intro2() {
       setTimeout(() => {
         setIntroLoaded();
       }, 1000);
-
-      // Run your initialization code here
-      console.log("All images have loaded!");
     }
   }, [loadedImages, totalImages]);
   return (

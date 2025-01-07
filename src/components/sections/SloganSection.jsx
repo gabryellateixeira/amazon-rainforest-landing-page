@@ -1,6 +1,5 @@
 "use client";
-import { useRef } from "react";
-import { useScroll, motion, useTransform } from "framer-motion";
+
 import Paragraph from "../scroll-opacity/Character";
 export default function SloganSection() {
   return (

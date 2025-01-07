@@ -1,6 +1,6 @@
 "use client";
-import React, { use, useEffect, useRef, useState } from "react";
-import { animate, motion, useInView } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { items } from "@/data/carouselitems";
 import { Tilt } from "../core/tilt";
@@ -19,9 +19,6 @@ function Carousel() {
     margin: "-200px 0px -200px 0px",
     once: true,
   });
-  useEffect(() => {
-    console.log(isInView);
-  }, [isInView]);
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, [carousel]);

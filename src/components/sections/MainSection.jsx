@@ -1,22 +1,17 @@
 "use client";
 import {
-  AnimatePresence,
   motion,
-  useMotionValue,
   useScroll,
   useTransform,
   useMotionTemplate,
-  useSpring,
 } from "framer-motion";
 import SectionVideo from "../SectionVideo";
 import { useStore } from "@/store";
 
-import { useState, useRef } from "react";
-import useMousePosition from "@/hooks/useMousePosition";
-import { cn } from "@/lib/cn";
+import { useRef } from "react";
+
 import Image from "next/image";
-import { ScrollText } from "lucide-react";
-import { TextShimmer } from "@/components/core/text-shimmer";
+
 export default function MainSection() {
   const section = useRef();
   const { scrollYProgress } = useScroll({
