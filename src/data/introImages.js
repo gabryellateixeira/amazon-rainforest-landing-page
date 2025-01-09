@@ -108,7 +108,7 @@ export const introImages = [
       layoutId: "animal-15",
       label: "penguin",
 
-      img: "/img/mountaintoucan.jpg",
+      img: "/img/mountaintoucan.webp",
     },
     {
       id: 16,
@@ -159,7 +159,7 @@ export const introImages = [
       layoutId: "animal-22",
       label: "snake",
 
-      img: "/img/glass.jpg",
+      img: "/img/glass.webp",
     },
     {
       id: 23,
