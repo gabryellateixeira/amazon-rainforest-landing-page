@@ -36,7 +36,7 @@ function Carousel() {
           initial="initial"
           whileInView="view"
           transition={{ duration: 1 }}
-          className="text-9xl mb-5 whitespace-nowrap text-white  font-extrabold text-center tracking-[-0.06em]   "
+          className="text-8xl mb-5 whitespace-nowrap text-white  font-extrabold text-center tracking-[-0.06em]   "
         >
           Discover Our Animals
         </motion.h1>

@@ -58,7 +58,7 @@ export default function ScrollTop() {
               cx="50"
               cy="50"
               r="38"
-              stroke="white"
+              stroke="gray"
               strokeWidth="6"
               fill="none"
               style={{
@@ -68,7 +68,7 @@ export default function ScrollTop() {
           </svg>
         </span>
         <span className="relative grid place-items-center">
-          <ChevronUp size={40} color="white" />
+          <ChevronUp size={40} color="gray" className=" mix-blend-difference" />
         </span>
       </motion.button>
 
@@ -106,7 +106,7 @@ function ScrollIndicator() {
         }}
         className="grid place-items-center size-10 relative"
       >
-        <Pointer className=" text-white animate-bounce" size={40} />
+        <Pointer color="gray" className="  animate-bounce" size={40} />
       </motion.div>
     </div>
   );

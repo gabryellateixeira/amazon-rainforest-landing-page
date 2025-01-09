@@ -32,7 +32,7 @@ export default function VideoSection() {
   return (
     <section
       ref={container}
-      className="h-[150vh] relative z-50  bg-black text-white mb-"
+      className="h-[150vh] relative z-50  bg-white text-white mb-"
     >
       <motion.div
         className="relative h-full flex flex-col"
@@ -44,7 +44,7 @@ export default function VideoSection() {
         }}
       >
         <ReactPlayer
-          url="/hero.mp4"
+          url="/hero_2.mp4"
           loop={true}
           playing={true}
           muted={true}

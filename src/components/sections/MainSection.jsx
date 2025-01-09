@@ -42,7 +42,7 @@ function Background({ progress }) {
     <>
       <MotionImage
         layout
-        src="/img/hero.jpg"
+        src="/img/hero.png"
         fill
         alt="dev"
         //sizes="100vw"
@@ -111,7 +111,7 @@ function Slider({ progress }) {
   return (
     <motion.div
       style={{ scaleX }}
-      className="absolute inset-0 z-50 size-full bg-black"
+      className="absolute inset-0 z-50 size-full bg-white"
     ></motion.div>
   );
 }
@@ -132,7 +132,7 @@ function Header({ progress }) {
       }}
       className="flex justify-center items-center relative"
     >
-      <motion.h1 className="text-9xl whitespace-nowrap text-black font-bold tracking-[-0.06em]   ">
+      <motion.h1 className="text-9xl whitespace-nowrap text-white font-bold tracking-[-0.06em]   ">
         Amazon Rainforest
       </motion.h1>
       <motion.div style={{ x, y }} className="   mt-5 absolute top-28">

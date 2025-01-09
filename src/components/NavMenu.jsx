@@ -67,7 +67,7 @@ export default function NavMenu({
       className="flex flex-row flex-nowrap justify-between items-center gap-5 absolute z-[99999999999] right-[50px] top-[50px]"
     >
       <motion.div
-        className="w-[480px] h-[650px] bg-[#c9fd74] rounded-[25px] relative pointer-events-auto"
+        className="w-[480px] h-[650px] bg-[#426601] rounded-[25px] relative pointer-events-auto"
         variants={menuVariants}
         animate={menuOpen ? "open" : "closed"}
         initial="closed"
@@ -197,7 +197,7 @@ function Nav({
             exit="exit"
             onClick={() => setAboutUsDialog(true)}
           >
-            <p className="text-black text-[46px]">About us</p>
+            <p className="text-white text-[46px]">About us</p>
           </motion.button>
         </div>
         <div className="[perspective:_120px] [perspective-origin:_bottom]">
@@ -211,7 +211,7 @@ function Nav({
               setNewsletterDialog(true);
             }}
           >
-            <p className="text-black text-[46px]">Newsletter</p>
+            <p className="text-white text-[46px]">Newsletter</p>
           </motion.button>
         </div>
         <div className="[perspective:_120px] [perspective-origin:_bottom]">
@@ -225,7 +225,7 @@ function Nav({
               scrollToDownload();
             }}
           >
-            <p className="text-black text-[46px]">Download</p>
+            <p className="text-white text-[46px]">Download</p>
           </motion.button>
         </div>
       </div>
@@ -242,12 +242,12 @@ function NavMenuButton({ isOpen, setOpen }) {
         transition={{ duration: 0.5, type: "tween", ease: [0.76, 0, 0.24, 1] }}
       >
         <div
-          className="size-full bg-[#c9fd74] group "
+          className="size-full bg-[#426601] group "
           onClick={() => {
             setOpen();
           }}
         >
-          <PerspectiveText label="Menu" />
+          <PerspectiveText label="Menu" color="white" />
         </div>
 
         <div
@@ -256,7 +256,7 @@ function NavMenuButton({ isOpen, setOpen }) {
             setOpen();
           }}
         >
-          <PerspectiveText label="Close" color="#c9fd74" />
+          <PerspectiveText label="Close" color="#426601" />
         </div>
       </motion.div>
     </div>
@@ -291,14 +291,14 @@ function PerspectiveText({ label, color = "black" }) {
   return (
     <div className="flex flex-col justify-center items-center h-full w-full [transform-style:_preserve-3d] transition-transform duration-[0.75s] [transition-timing-function:_cubic-bezier(0.76,_0,_0.24,_1)]  group-hover:[transform:_rotateX(90deg)]">
       <p
-        className="m-0 transition-all pointer-events-none duration-[0.75s] [transition-timing-function:_cubic-bezier(0.76,_0,_0.24,_1)]  uppercase group-hover:-translate-y-full group-hover:opacity-0"
+        className="m-0  transition-all pointer-events-none duration-[0.75s] [transition-timing-function:_cubic-bezier(0.76,_0,_0.24,_1)]  uppercase group-hover:-translate-y-full group-hover:opacity-0"
         style={{ color: color }}
       >
         {label}
       </p>
 
       <p
-        className="m-0 transition-all pointer-events-none duration-[0.75s] [transition-timing-function:_cubic-bezier(0.76,_0,_0.24,_1)] absolute origin-[bottom_center] [transform:_rotateX(-90deg)_translateY(9px)] opacity-0  uppercase group-hover:opacity-100"
+        className="m-0  transition-all pointer-events-none duration-[0.75s] [transition-timing-function:_cubic-bezier(0.76,_0,_0.24,_1)] absolute origin-[bottom_center] [transform:_rotateX(-90deg)_translateY(9px)] opacity-0  uppercase group-hover:opacity-100"
         style={{ color: color }}
       >
         {label}

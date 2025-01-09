@@ -16,7 +16,7 @@ const cards = [
     id: 0,
     label: "Mammals",
     description: "Mammals are very cool and they live on mud.",
-    img: "/img/hero.jpg",
+    img: "/img/hero.png",
     animals: [
       {
         id: 0,

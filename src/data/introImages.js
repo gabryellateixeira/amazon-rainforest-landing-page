@@ -122,7 +122,7 @@ export const introImages = [
       layoutId: "hero-layout-image",
       label: "hero",
 
-      img: "/img/hero.jpg",
+      img: "/img/hero.png",
     },
     {
       id: 18,
@@ -183,7 +183,7 @@ export const introImages = [
       id: 26,
       layoutId: "animal-26",
       label: "fox",
-      img: "/img/15.jpg",
+      img: "/img/tapir.jpg",
     },
     {
       id: 27,

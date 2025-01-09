@@ -148,7 +148,7 @@ function Tile({}) {
       }}
       className="relative flex-1 flex  h-full w-full"
     >
-      <motion.div className="h-full flex-1 bg-gradient-to-r from-black to-accent-dark relative  w-20 pointer-events-auto" />
+      <motion.div className="h-full flex-1 bg-gradient-to-r from-black to-[#162300] relative  w-20 pointer-events-auto" />
     </motion.div>
   );
 }
@@ -217,12 +217,13 @@ function AboutUsDialog({ aboutUsDialog, setAboutUsDialog }) {
             className="w-[180px] z-50 origin-bottom h-[247px] bg-white relative p-3 flex justify-center items-end"
           >
             <Image
-              src="/img/1.jpg"
+              priority
+              src="/img/rita.jpg"
               alt="Picture of Rita Paredes"
               className="size-full object-cover absolute"
               fill
             />
-            <p className="relative z-50 text-white text-xl leading-6 font-semibold text-center">
+            <p className="relative z-50 text-white text-xl leading-6 font-semibold text-center ">
               Rita <br /> Paredes
             </p>
           </motion.div>
@@ -237,12 +238,13 @@ function AboutUsDialog({ aboutUsDialog, setAboutUsDialog }) {
             className="w-[180px] origin-bottom h-[247px] bg-white relative p-3 flex justify-center items-end"
           >
             <Image
-              src="/img/2.jpg"
+              priority
+              src="/img/gabryella.jpg"
               alt="Picture of Gabryella Teixeira"
               className="size-full object-cover absolute"
               fill
             />
-            <p className="relative z-50 text-white text-xl leading-6 font-semibold text-center">
+            <p className="relative z-50 text-white text-xl leading-6 font-semibold text-center  ">
               Gabryella <br /> Teixeira
             </p>
           </motion.div>
@@ -257,12 +259,13 @@ function AboutUsDialog({ aboutUsDialog, setAboutUsDialog }) {
             className="w-[180px] z-50 origin-bottom h-[247px] bg-white relative p-3 flex justify-center items-end"
           >
             <Image
-              src="/img/3.jpg"
+              priority
+              src="/img/leonor.jpg"
               alt="Picture of Leonor Batista"
               className="size-full object-cover absolute"
               fill
             />
-            <p className="relative z-50 text-white text-xl leading-6 font-semibold text-center">
+            <p className="relative z-50 text-white text-xl leading-6 font-semibold text-center ">
               Leonor <br /> Batista
             </p>
           </motion.div>

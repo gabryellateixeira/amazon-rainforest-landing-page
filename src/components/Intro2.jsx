@@ -178,7 +178,7 @@ export default function Intro2() {
   }, [loadedImages, totalImages]);
   return (
     <>
-      <motion.div className=" grid pointer-events-auto bg-black gap-4 flex-none relative w-[200vw] h-[200vh] grid-rows-[repeat(5,1fr)] grid-cols-[100%] origin-[center_center] ">
+      <motion.div className=" grid pointer-events-auto bg-[#162300] gap-4 flex-none relative w-[200vw] h-[200vh] grid-rows-[repeat(5,1fr)] grid-cols-[100%] origin-[center_center] ">
         {introImages.map((row, i) => {
           return (
             <Row
